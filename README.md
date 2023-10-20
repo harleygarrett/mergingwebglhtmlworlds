@@ -14,3 +14,7 @@ npm install
 
 npm run dev
 ```
+
+## Resources
+
+- [Classic Perlin 3D Noise](https://gist.github.com/patriciogonzalezvivo/670c22f3966e662d2f83#classic-perlin-noise)

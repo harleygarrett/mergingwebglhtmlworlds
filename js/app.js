@@ -43,7 +43,7 @@ export default class Sketch {
 
   addObjects() { // create elements on canvas
     // this.geometry = new THREE.BoxGeometry(0.5, 0.5, 0.5); // cube
-    this.geometry = new THREE.PlaneGeometry(0.5, 0.5, 100, 100); // plane
+    this.geometry = new THREE.PlaneGeometry(0.5, 0.5, 50, 50); // plane
     this.material = new THREE.MeshNormalMaterial();
 
     this.material = new THREE.ShaderMaterial({
