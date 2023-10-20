@@ -43,7 +43,7 @@ export default class Sketch {
 
   addObjects() { // create elements on canvas
     // this.geometry = new THREE.BoxGeometry(0.5, 0.5, 0.5); // cube
-    this.geometry = new THREE.PlaneGeometry(0.5, 0.5, 20, 20); // plane
+    this.geometry = new THREE.PlaneGeometry(2., 2., 200, 200); // plane
     this.material = new THREE.MeshNormalMaterial();
 
     this.material = new THREE.ShaderMaterial({
@@ -55,7 +55,7 @@ export default class Sketch {
       side: THREE.DoubleSide, // ensure both sides of shape are visible
       fragmentShader: fragment,
       vertexShader: vertex,
-      wireframe: true // show construction lines only
+      // wireframe: true // show construction lines only
     })
 
     this.mesh = new THREE.Mesh(this.geometry, this.material);

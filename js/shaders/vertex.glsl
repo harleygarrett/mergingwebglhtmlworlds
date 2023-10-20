@@ -80,7 +80,7 @@ void main() {
   vec3 newPosition = position;
   float PI = 3.1415926;
 
-  float noise = cnoise(vec3(position.x * 4., position.y * 4. + time / 5., 0.));
+  float noise = cnoise(vec3(position.x * 8., position.y * 6. + time / 8., 0.));
 
   // newPosition.z += 0.1 * sin(position.x * 15.);
 
