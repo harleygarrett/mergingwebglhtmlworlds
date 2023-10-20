@@ -1,0 +1,15 @@
+{
+  "name": "mergingwebglhtmlworlds",
+  "version": "1.0.0",
+  "description": "Following Merging WebGL and HTML Worlds Awwwards course by Yuri Artiukh",
+  "source": "index.html",
+  "scripts": {
+    "dev": "parcel"
+  },
+  "devDependencies": {
+    "parcel": "latest"
+  },
+  "dependencies": {
+    "three": "^0.157.0"
+  }
+}
