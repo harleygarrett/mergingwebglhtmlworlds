@@ -16,8 +16,22 @@ export default class Sketch {
     this.renderer.setSize(this.width, this.height);
     this.container.appendChild(this.renderer.domElement);
 
+    this.resize(); // not sure this is needed
+    this.setupResize();
     this.addObjects();
     this.render();
+  }
+
+  setupResize() {
+    window.addEventListener('resize', this.resize.bind(this)); // calls resize function on window resize
+  }
+
+  resize() { // resize element
+    this.width = this.container.offsetWidth;
+    this.height = this.container.offsetHeight;
+    this.renderer.setSize(this.width, this.height);
+    this.camera.aspect = this.width / this.height;
+    this.camera.updateProjectionMatrix();
   }
 
   addObjects() { // create elements on canvas
